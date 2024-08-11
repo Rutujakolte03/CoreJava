@@ -1,0 +1,7 @@
+class mobile_number {
+    public static void main(String[]args) {
+        long mobile_number = 9423756799l;
+        mobile_number = 8275159161;
+        System.out.println(mobile_number);
+    }
+}
