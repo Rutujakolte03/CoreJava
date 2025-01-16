@@ -1,39 +1,23 @@
-
 public class Student {
     String name;
     int age;
-    String address;
-    public Student(String name, int age, String address) {
-        this.name = name;
-        this.age = age;
-        this.address = address;
-    }    
-    public void setName(String name) {
-        this.name = name;
+    
+    public Student(String name){
+        this.name=name;
+        age=0;
     }
-    public void setAge(int age) {
-        this.age = age;
+    public Student(String name, int age){
+        this.name=name;
+        this.age=age;
     }
-    public void setAddress(String address) {
-        this.address = address;
-    }
-    public String getName() {
-        return name;
-    }
-    public int getAge() {
-        return age;
-    }
-    public String getAddress() {
-        return address;
-    }  
-    @Override
-    public String toString() {
-        return ("Student name is " + this.getName() + ", age is: "+ this.getAge() + " and address is:" + this.getAddress());
+    public void displayDetails(){
+        System.out.println("Name:"+name + ",Age:"+ age);
     }
     public static void main(String[] args) {
-        Student rutuja = new Student("rutuja", 15, "23 East, California");
-        System.out.println(rutuja.getName());
-        System.out.println(rutuja.getAge());
-        System.out.println(rutuja.getAddress());
+        Student student1 = new Student("Rutuja");
+        student1.displayDetails();
+        
+        Student student2 = new Student("Vrushi", 25);
+        student2.displayDetails();
     }
 }
