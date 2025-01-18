@@ -1,4 +1,4 @@
-class A {
+class Quetions {
     public static void main(String[] args) {
         // For primitive data type (int), you can initialize it with a number.
         int a = 10;

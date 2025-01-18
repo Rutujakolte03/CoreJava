@@ -1,5 +1,5 @@
 import java.util.Scanner;
-class Main {
+class SBI {
     long Account_Number;
     String Account_Holder_Name;
     double Account_Balance;
